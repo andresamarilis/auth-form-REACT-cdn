@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>React</title>
+</head>
+<body class="all">
+
+    <div class="container">
+        <h1>Authorization Form</h1>
+        <p>
+        Authorization Form made using REACT. Works by using CDN links rather than downloading the REACT library. 
+        Minified and optimized production versions of React are used. Babel is used and is a transpiler i.e. it converts the JSX to vanilla JavaScript.
+        This page will display contact info when the correct password ('swordfish') is entered. 
+        </p>
+        <div id="auth-form"></div>
+      </div>
+
+
+      <!-- This is a react codecademy project. https://www.youtube.com/watch?v=YnrgTBdhgV4&ab_channel=iEatWebsites was used for help.  -->
+    
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+
+ 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+
+    <script type="text/babel" src="Contact.js"></script>
+
+    <script type="text/babel">
+        ReactDOM.render(<Contact />, document.getElementById('auth-form'));
+      </script>
+</body>
+</html>
